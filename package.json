@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "Bootstrap-Portfolio Homework",
   "main": "express.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "handlebars": "^4.1.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfcrotty/Portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.4",
-    "handlebars": "^4.1.1"
-  }
+  "bugs": {
+    "url": "https://github.com/cfcrotty/Portfolio/issues"
+  },
+  "homepage": "https://github.com/cfcrotty/Portfolio#readme"
 }
