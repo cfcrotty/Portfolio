@@ -1,0 +1,82 @@
+<div id="container" class="container">
+    <div class="row indexSection1">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pad1">
+                        <h2>Contact</h2>
+                        <p class="line-border"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divForm">
+                        <form action="">
+                            <p><b>Name</b></p>
+                            <input class="text" id="name" name="name" type="text" value="" placeholder="Name" />
+                            <p><b>Email</b></p>
+                            <input class="text" id="email" name="email" type="text" value="" placeholder="Email" />
+                            <p><b>Message</b></p>
+                            <textarea name="textarea" id="textarea" class="textarea"></textarea>
+                            <input type="button" value="Submit" class="submit" onclick="checkValues();">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="container1" class="container">
+    <div class="row indexSection">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pad1">
+                        <h2>Contact</h2>
+                        <p class="line-border"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="divForm">
+                        <p>Your information has been submitted.</p>
+                        <p><b>Name</b>: <div class="" id="name1"></div>
+                        </p>
+                        <p><b>Email</b>: <div class="" id="email1"></div>
+                        </p>
+                        <p><b>Message</b>: <div class="" id="message1"></div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    //Show hide some div and insert value
+    function showHide() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var textarea = document.getElementById("textarea").value;
+
+        document.getElementById("container").style.display = 'none';
+        document.getElementById("container1").style.display = 'inline-block';
+        document.getElementById("name1").innerHTML = name;
+        document.getElementById("email1").innerHTML = email;
+        document.getElementById("message1").innerHTML = textarea;
+    }
+
+    function checkValues() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var textarea = document.getElementById("textarea").value;
+
+        if (!name || !email || !textarea) {
+            alert("Please complete the form before submitting.");
+            return 0;
+        }
+        showHide();
+    }
+</script>

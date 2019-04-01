@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row indexSection1">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pad1">
+                        <h2>Portfolio</h2>
+                        <p class="line-border"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="imagesDiv">
+                        <div class="perImageDiv" onclick="showImages(1);">
+                            <img class="img-thumbnail image" alt="San Diego Zoo" src="assets/images/zoo.JPG">
+                            <p class="imageDesc">San Diego Zoo</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(2);">
+                            <img class="img-thumbnail image" alt="San Diego Beach" src="assets/images/beach.JPG">
+                            <p class="imageDesc">San Diego Beach</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(3);">
+                            <img class="img-thumbnail image" alt="San Diego Hike" src="assets/images/flower.JPG">
+                            <p class="imageDesc">San Diego Hike</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(4);">
+                            <img class="img-thumbnail image" alt="San Diego Park" src="assets/images/tree.JPG">
+                            <p class="imageDesc">San Diego Park</p>
+                        </div>
+                        <div class="perImageDiv" onclick="showImages(5);">
+                            <img class="img-thumbnail image" alt="San Diego Farm" src="assets/images/julian.JPG">
+                            <p class="imageDesc">San Diego Farm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="fullImage1" class="fullImage"><img class="image1 img-fluid" alt="San Diego Zoo"
+                    src="assets/images/zoo.JPG"><input type="button" class="closeImage" onclick="closeImage(1);"
+                    value="close"></div>
+            <div id="fullImage2" class="fullImage"><img class="image1 img-fluid" alt="San Diego Beach"
+                    src="assets/images/beach.JPG"><input type="button" class="closeImage" onclick="closeImage(2);"
+                    value="close"></div>
+            <div id="fullImage3" class="fullImage"><img class="image1 img-fluid" alt="San Diego Hike"
+                    src="assets/images/flower.JPG"><input type="button" class="closeImage" onclick="closeImage(3);"
+                    value="close"></div>
+            <div id="fullImage4" class="fullImage"><img class="image1 img-fluid" alt="San Diego Park"
+                    src="assets/images/tree.JPG"><input type="button" class="closeImage" onclick="closeImage(4);"
+                    value="close"></div>
+            <div id="fullImage5" class="fullImage"><img class="image1 img-fluid" alt="San Diego Farm"
+                    src="assets/images/julian.JPG"><input type="button" class="closeImage" onclick="closeImage(5);"
+                    value="close"></div>
+        </div>
+    </div>
+    <div id="fullImageContainer" class="fullBack"></div>
+</div>
+<script>
+    //show image
+    function showImages(val) {
+        document.getElementById("fullImageContainer").style.display = "block";
+        document.getElementById("fullImage" + val).style.display = "block";
+    }
+    //hide image
+    function closeImage(val) {
+        document.getElementById("fullImageContainer").style.display = "none";
+        document.getElementById("fullImage" + val).style.display = "none";
+    }
+</script>
