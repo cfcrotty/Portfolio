@@ -2,7 +2,7 @@
   "name": "Portfolio",
   "version": "1.0.0",
   "description": "Bootstrap-Portfolio Homework",
-  "main": "express.js",
+  "main": "server.js",
   "dependencies": {
     "express": "^4.16.4",
     "handlebars": "^4.1.1"
