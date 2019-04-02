@@ -4,7 +4,8 @@ body {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
-    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554155172/ep_naturalwhite.png') repeat center center fixed;
+    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554170793/whiteBeach.jpg') no-repeat center center;
+    background-size: cover;
 }
 h2, h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -231,7 +232,7 @@ a, a:visited {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
-    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554155181/error.jpg') no-repeat center center;
+    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554170792/island.jpg') no-repeat center center;
     position: absolute;
 }
 .errorPageDiv {
