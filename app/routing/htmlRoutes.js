@@ -3,10 +3,13 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = (app) => {
+    app.get('/', function (req, res) {
+        res.sendFile(path.join(__dirname, "../public/home.html"));
+    });
     app.get('*', function (req, res) {
         let newArr = req.params[0].split("/");
-        let page = newArr[1] || "home";
-        if ((page == "home" || page == "contact" || page == "portfolio") && !newArr[2] ) {
+        let page = newArr[1] || "about";
+        if ((page == "about" || page == "contact" || page == "portfolio") && !newArr[2] ) {
             fs.readFile(__dirname + `/../public/${page}.html`, function (err, pageRes) {
                 var data = {
                     data: pageRes
