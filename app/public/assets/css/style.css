@@ -233,7 +233,7 @@ a, a:visited {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
     background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554170792/island.jpg') no-repeat center center;
-    position: absolute;
+    background-size: cover;
 }
 .errorPageDiv {
     margin: auto;
