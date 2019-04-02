@@ -3,6 +3,9 @@ const path = require("path");
 const fs = require("fs");
 
 module.exports = (app) => {
+    app.get("/", (req, res) => {
+        res.sendFile(path.join(__dirname, "../public/main.html"));
+    });
     app.get('*', function (req, res) {
         let newArr = req.params[0].split("/");
         let page = newArr[1] || "home";
