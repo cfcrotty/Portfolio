@@ -13,24 +13,22 @@
                 <div class="col-md-12">
                     <div class="imagesDiv">
                         <div class="perImageDiv" onclick="showImages(1);">
-                            <img class="img-thumbnail image" alt="San Diego Zoo" src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155179/zoo.jpg">
-                            <p class="imageDesc">San Diego Zoo</p>
+                            <img class="img-thumbnail image" alt="Dasher" src="assets/images/dasher.png">
+                            <p class="imageDesc">Dasher</p>
                         </div>
                         <div class="perImageDiv" onclick="showImages(2);">
-                            <img class="img-thumbnail image" alt="San Diego Beach" src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155178/beach.jpg">
-                            <p class="imageDesc">San Diego Beach</p>
+                            <img class="img-thumbnail image" alt="Eat-Da-Burger Sequelize"
+                                src="assets/images/sequelizeBurger.png">
+                            <p class="imageDesc">Eat-Da-Burger Sequelize</p>
                         </div>
                         <div class="perImageDiv" onclick="showImages(3);">
-                            <img class="img-thumbnail image" alt="San Diego Hike" src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155174/flower.jpg">
-                            <p class="imageDesc">San Diego Hike</p>
+                            <img class="img-thumbnail image" alt="Eat-Da-Burger" src="assets/images/burger.png">
+                            <p class="imageDesc">Eat-Da-Burger</p>
                         </div>
                         <div class="perImageDiv" onclick="showImages(4);">
-                            <img class="img-thumbnail image" alt="San Diego Park" src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155177/tree.jpg">
-                            <p class="imageDesc">San Diego Park</p>
-                        </div>
-                        <div class="perImageDiv" onclick="showImages(5);">
-                            <img class="img-thumbnail image" alt="San Diego Farm" src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155174/julian.jpg">
-                            <p class="imageDesc">San Diego Farm</p>
+                            <img class="img-thumbnail image" alt="Friend Finder"
+                                src="assets/images/friendFinder.png">
+                            <p class="imageDesc">Friend Finder</p>
                         </div>
                     </div>
                 </div>
@@ -38,36 +36,76 @@
 
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div id="fullImage1" class="fullImage"><img class="image1 img-fluid" alt="San Diego Zoo"
-                    src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155179/zoo.jpg"><input type="button" class="closeImage" onclick="closeImage(1);"
-                    value="close"></div>
-            <div id="fullImage2" class="fullImage"><img class="image1 img-fluid" alt="San Diego Beach"
-                    src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155178/beach.jpg"><input type="button" class="closeImage" onclick="closeImage(2);"
-                    value="close"></div>
-            <div id="fullImage3" class="fullImage"><img class="image1 img-fluid" alt="San Diego Hike"
-                    src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155174/flower.jpg"><input type="button" class="closeImage" onclick="closeImage(3);"
-                    value="close"></div>
-            <div id="fullImage4" class="fullImage"><img class="image1 img-fluid" alt="San Diego Park"
-                    src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155177/tree.jpg"><input type="button" class="closeImage" onclick="closeImage(4);"
-                    value="close"></div>
-            <div id="fullImage5" class="fullImage"><img class="image1 img-fluid" alt="San Diego Farm"
-                    src="https://res.cloudinary.com/hherymxgl/image/upload/v1554155174/julian.jpg"><input type="button" class="closeImage" onclick="closeImage(5);"
-                    value="close"></div>
+</div>
+<!-- Modal -->
+<div id="results-modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <!-- <h2 class="modal-title text-center" style="color:red;">Name is Required</h2> -->
+            </div>
+            <div class="modal-body">
+                <div id="fullImage1" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Dasher</h4>
+                    <h5 id="errorBody">A group project that gathers your selected information from across the web and
+                        displays it in one convenient location. It uses Javascript, Node, Express, MySQL, Handlebars,
+                        Seqeulize, and Bootstrap Git for version control and deployed in Heroku.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://dasher-homepage.herokuapp.com"
+                            target="_blank" title="Click to open">Dasher</a></button>
+                    <button type="button" class="btn btn-warning"><a
+                            href="https://github.com/Matt-S-Elliott/project-two.git" target="_blank"
+                            title="Click to open">Github Repository</a></button>
+                </div>
+                <div id="fullImage2" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Sequelize Eat-Da-Burger!</h4>
+                    <h5 id="errorBody">A burger logger application with Javascript, Node, Express, Handlebars,
+                        Seqeulize, MySQL, and Bootstrap deployed in Heroku.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://sequelized-burger-cc.herokuapp.com"
+                            target="_blank" title="Click to open">Eat-Da-Burger!</a></button>
+                    <button type="button" class="btn btn-warning"><a
+                            href="https://github.com/cfcrotty/sequelizedBurger.git" target="_blank"
+                            title="Click to open">Github Repository</a></button>
+                </div>
+                <div id="fullImage3" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Eat-Da-Burger!</h4>
+                    <h5 id="errorBody">A burger logger application with Javascript, Node, Express, Handlebars, ORM,
+                        MySQL, and Bootstrap deployed in Heroku.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://eat-da-burger-cc.herokuapp.com"
+                            target="_blank" title="Click to open">Eat-Da-Burger!</a></button>
+                    <button type="button" class="btn btn-warning"><a href="https://github.com/cfcrotty/burger.git"
+                            target="_blank" title="Click to open">Github Repository</a></button>
+                </div>
+                <div id="fullImage4" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Eat-Da-Burger!</h4>
+                    <h5 id="errorBody">It is like a dating app using Javascript, Node.js based application with Express,
+                        and Bootstrap deployed in Heroku..</h5>
+                    <button type="button" class="btn btn-success"><a href="https://friend-finder-cfc.herokuapp.com/"
+                            target="_blank" title="Click to open">Eat-Da-Burger!</a></button>
+                    <button type="button" class="btn btn-warning"><a href="https://github.com/cfcrotty/FriendFinder.git"
+                            target="_blank" title="Click to open">Github Repository</a></button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
+
     </div>
-    <div id="fullImageContainer" class="fullBack"></div>
 </div>
 <script>
     //show image
     function showImages(val) {
-        document.getElementById("fullImageContainer").style.display = "block";
-        document.getElementById("fullImage" + val).style.display = "block";
+        $("#results-modal").modal();
+        $("#fullImage" + val).show();
+        for (let i = 1; i <= 4; i++) {
+            if (val != i) $("#fullImage" + i).hide();
+        }
     }
     //hide image
-    function closeImage(val) {
-        document.getElementById("fullImageContainer").style.display = "none";
-        document.getElementById("fullImage" + val).style.display = "none";
-    }
+    // function closeImage(val) {
+    //     document.getElementById("fullImageContainer").style.display = "none";
+    //     document.getElementById("fullImage" + val).style.display = "none";
+    // }
 </script>
