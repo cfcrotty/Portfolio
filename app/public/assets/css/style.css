@@ -239,7 +239,8 @@ a, a:visited {
     color: #3e3e41;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
-    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554170793/whiteBeach.jpg') no-repeat center center fixed;
+    /* https://res.cloudinary.com/hherymxgl/image/upload/v1554170793/whiteBeach.jpg */
+    background: url('../images/whiteBeach.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 .body2 {
