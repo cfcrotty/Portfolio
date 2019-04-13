@@ -4,8 +4,8 @@ body {
     color: #3e3e41;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
-    background: url('../images/swirl_pattern.png') repeat center center fixed;
-    /* background-size: cover; */
+    background: url('../images/river.JPG') no-repeat center center fixed;
+    background-size: cover;
     /* https://res.cloudinary.com/hherymxgl/image/upload/v1554170793/whiteBeach.jpg */
 }
 h2, h3 {
@@ -74,7 +74,7 @@ a, a:visited {
     min-height: calc(100vh - 110px);
 }
 .container1 {
-    min-height: calc(100vh - 225px);
+    min-height: calc(100vh - 213px);
 }
 .header {
     width: 960px;
@@ -248,7 +248,8 @@ a, a:visited {
     color: #3e3e41;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: center;
-    background: url('https://res.cloudinary.com/hherymxgl/image/upload/v1554185060/coconut.jpg') no-repeat center center fixed;
+    /* https://res.cloudinary.com/hherymxgl/image/upload/v1554185060/coconut.jpg */
+    background: url('../images/coconut.JPG') no-repeat center center fixed;
     background-size: cover;
 }
 .errorPageDiv {
@@ -277,7 +278,26 @@ a, a:visited {
 #container1 {
     display: none;
 }
-
+#animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    /* top: 0;
+    right: 1000; */
+}
+.marginTop {
+    margin-top: 100px;
+    float: left;
+    position: relative;
+}
+.header1 {
+    width: 100%;
+    margin: auto;
+    margin-left: 15%;
+}
+#about, #portfolio, #contact {
+    opacity: 0;
+}
 /* START - Changes to Bootstrap CSS */
 .navbar {
     padding: 0;
@@ -310,6 +330,9 @@ a, a:visited {
 .navbar {
     position: relative;
     z-index: 10;
+}
+.flex {
+    display: block;
 }
 /* END - Changes to Bootstrap CSS */
 
@@ -365,6 +388,9 @@ a, a:visited {
     .closeImage {
         right: 200px;
     }
+    .header1 {
+        margin-left: 20%;
+    }
 }
 @media screen and (max-width: 768px)  {
     .image1 {
@@ -393,6 +419,9 @@ a, a:visited {
     }
     .errorPageGif {
         width: 100%;
+    }
+    .header1 {
+        margin-left: 25%;
     }
 }
   /* END - Media Queries */

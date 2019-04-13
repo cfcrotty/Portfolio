@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Homework-Recommended</title>
     <meta charset="UTF-8">
@@ -8,34 +7,38 @@
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Playfair+Display" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cfcrotty.github.io/Portfolio/app/public/assets/css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cfcrotty.github.io/Portfolio/app/public/assets/css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 </head>
 
 <body class="body2">
     <nav class="navbar navbar-expand-lg navbar-light noBackground">
-        <div class="header">
-            <div class="navbar-nav mr-auto" id="navbarNav">
-                <div class="nav-item">
-                    <a href="/"><img class="myLogo" src="assets/images/caracrotty.png"></a>
-                    <a class="nav-link" href="/about">About</a>
-                    <a class="nav-link" href="/portfolio">Portfolio</a>
-                    <a class="nav-link" href="/contact">Contact</a>
+        <div class="header1">
+            <div class="navbar-nav mr-auto flex" id="navbarNav">
+                <div class="nav-item marginTop">
+                    <!-- <a href="/"><img class="myLogo" src="assets/images/caracrotty.png"></a> -->
+                    <a id="about" class="nav-link" href="/about">About</a>
+                    <a id="portfolio" class="nav-link" href="/portfolio">Portfolio</a>
+                    <a id="contact" class="nav-link" href="/contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
+    <div id="animate" style="display:none;"><a href="/"><img class="myLogo" src="assets/images/caracrotty.png"></a>
+    </div>
     <footer class="myFooter">
         <p class="center">Copyright&copy;</p>
     </footer>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script src="/assets/js/app.js"></script>
 
 </html>
