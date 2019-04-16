@@ -8,7 +8,7 @@ $(function () {
     document.getElementById("animate").style.display = "block";
     var elem = document.getElementById("animate");
     var pos = 80;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, 30);
     function frame() {
       if (pos == 4) {
         clearInterval(id);
