@@ -13,6 +13,11 @@
                 <div class="col-md-12">
                     <div class="imagesDiv">
                         <div class="perImageDiv">
+                            <img onclick="showImages(13);" class="img-thumbnail image" alt="Clicky Game"
+                                src="assets/images/clicky.png">
+                            <p class="imageDesc">Clicky Game</p>
+                        </div>
+                        <div class="perImageDiv">
                             <img onclick="showImages(12);" class="img-thumbnail image" alt="Mongo Scraper"
                                 src="assets/images/scraper.png">
                             <p class="imageDesc">Mongo Scraper</p>
@@ -89,6 +94,16 @@
                 <!-- <h2 class="modal-title text-center" style="color:red;">Name is Required</h2> -->
             </div>
             <div class="modal-body">
+                <div id="fullImage13" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Clicky Game</h4>
+                    <h5 id="errorBody">A memory game with React. It is broken up by application's UI into components,
+                        manage component state, and respond to user events. The application renders different images to
+                        the screen. Each image listens for click events.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://memory-game-cc.herokuapp.com"
+                            target="_blank" title="Click to open">Clicky Game</a></button>
+                    <button type="button" class="btn btn-warning"><a href="https://github.com/cfcrotty/memory-game.git"
+                            target="_blank" title="Click to open">Github Repository</a></button>
+                </div>
                 <div id="fullImage12" style="display:none">
                     <h4 class="text-center" style="color:red;" id="errorTitle">Mongo Scraper</h4>
                     <h5 id="errorBody">A web app that lets users view and leave comments on the latest news that are
