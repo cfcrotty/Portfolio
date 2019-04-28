@@ -13,6 +13,11 @@
                 <div class="col-md-12">
                     <div class="imagesDiv">
                         <div class="perImageDiv">
+                            <img onclick="showImages(14);" class="img-thumbnail image" alt="Google Books"
+                                src="assets/images/clicky.png">
+                            <p class="imageDesc">Google Books</p>
+                        </div>
+                        <div class="perImageDiv">
                             <img onclick="showImages(13);" class="img-thumbnail image" alt="Clicky Game"
                                 src="assets/images/clicky.png">
                             <p class="imageDesc">Clicky Game</p>
@@ -94,6 +99,17 @@
                 <!-- <h2 class="modal-title text-center" style="color:red;">Name is Required</h2> -->
             </div>
             <div class="modal-body">
+                <div id="fullImage14" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">Google Books</h4>
+                    <h5 id="errorBody">React-based Google Books Search app. It is made with React
+                        components, helper/util functions, and utilize React lifecycle methods to query and
+                        display books based on user searches. It uses Node, Express and MongoDB so that users
+                        can save books to review or purchase later.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://book-search-cc.herokuapp.com"
+                            target="_blank" title="Click to open">Google Books</a></button>
+                    <button type="button" class="btn btn-warning"><a href="https://github.com/cfcrotty/book-search.git"
+                            target="_blank" title="Click to open">Github Repository</a></button>
+                </div>
                 <div id="fullImage13" style="display:none">
                     <h4 class="text-center" style="color:red;" id="errorTitle">Clicky Game</h4>
                     <h5 id="errorBody">A memory game with React. It is broken up by application's UI into components,
