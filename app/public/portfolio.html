@@ -12,6 +12,11 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="imagesDiv">
+                            <div class="perImageDiv">
+                                    <img onclick="showImages(15);" class="img-thumbnail image" alt="TXT Reviews"
+                                        src="assets/images/textReviews.png">
+                                    <p class="imageDesc">TXT Reviews</p>
+                                </div>
                         <div class="perImageDiv">
                             <img onclick="showImages(14);" class="img-thumbnail image" alt="Google Books"
                                 src="assets/images/bookSearch.png">
@@ -99,6 +104,18 @@
                 <!-- <h2 class="modal-title text-center" style="color:red;">Name is Required</h2> -->
             </div>
             <div class="modal-body">
+                <div id="fullImage15" style="display:none">
+                    <h4 class="text-center" style="color:red;" id="errorTitle">TXT Reviews</h4>
+                    <h5 id="errorBody">TXT Reviews is a customer feedback tool for any business that has regular
+                        customer interactions. It is perfect for restaraunts, retail, and other service industries.
+                        Reviews and feedback are solicited via text messages sent to a location specific phone number.
+                        The goal is to provide a minimally frictional way for the customer to give realtime feedback to
+                        the business.</h5>
+                    <button type="button" class="btn btn-success"><a href="https://textreview.herokuapp.com"
+                            target="_blank" title="Click to open">TXT Reviews</a></button>
+                    <button type="button" class="btn btn-warning"><a href="https://github.com/brianturk/textreview.git"
+                            target="_blank" title="Click to open">Github Repository</a></button>
+                </div>
                 <div id="fullImage14" style="display:none">
                     <h4 class="text-center" style="color:red;" id="errorTitle">Google Books</h4>
                     <h5 id="errorBody">React-based Google Books Search app. It is made with React
